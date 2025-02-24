@@ -1,0 +1,18 @@
+# Applying pseudocolor to image
+
+# applying pseudocolor to image pseudocolor is useful for enhancing contrast of image. importing pyplot and image from matplotlib
+
+import matplotlib.pyplot as plt
+import matplotlib.image as img
+
+#reading png image
+im=img.imread('C:\\Users\\OAP6\\Desktop\\Nayan-opencv\\sea1.jpg')
+
+#applying pseudocolor
+#default value of colormap is used.
+lum=im[:,:,0]
+
+#show image
+plt.imshow(lum)
+
+
